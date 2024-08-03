@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rick and Morty</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body background="imagem/rick-and-morty.jpg">
+    <div class="container">
+        <div class="app">
+            <h1>Veja tudo sobre seu personagem favorito</h1>
+            <p>Insira um número e descubra tudo sobre o seu personagem e em quantos/quais episódios eleaparece.</p>
+            <p class="erro"></p>
+            <form action="#" method="get">
+                <input type="number" name="fnum" id="fnum" placeholder="Digite um número">
+                <input type="button" value="Descobrir" id="fbotao">
+            </form>
+        </div>
+        <div class="app2">
+            <div class="imagem">
+                <img src="imagem/default_image.png" alt="#" id="imgDefault" class="sombra">
+            </div>
+            <pre class="informacoes">
+                <div class="nome"></div>
+                <div class="status"></div>
+                <div class="especie"></div>
+                <div class="tipo"></div>
+                <div class="genero"></div>
+                <div class="dataCriacao"></div>
+            </pre>
+        </div>
+    </div>
+</body>
+<script src="script/api.js"></script>
+</html>
