@@ -19,6 +19,13 @@ botaoDescobrir.addEventListener('click', () => {
     core()
 })
 
+window.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        limparInformacoes()
+        core()
+    }
+})
+
 async function core() {
     try {
         const personagem = await apiKey(numPersonagem.value)
